@@ -97,7 +97,7 @@ public class OrderController {
         return service.getOrdersBySalesManId(id);
     }
     
-    @PostMapping("/date/{registerDay}/{id}")
+    @GetMapping("/date/{registerDay}/{id}")
     public List<Order> getOrdersByRegisterDayAndSalesManId(@PathVariable("registerDay") String registerDay, @PathVariable("id") Integer id){
         return service.getRegisterDay(registerDay, id);
     }

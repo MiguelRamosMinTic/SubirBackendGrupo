@@ -23,5 +23,5 @@ public interface OrderCrudRepository extends MongoRepository<Order, Integer>{
     
     public List<Order> findBySalesMan_Zone(String zone);
     
-    public List<Order> findByRegisterDayAndSalesManId(Date registerDay, Integer id);
+    public List<Order> findByRegisterDayAndSalesManId(String registerDay, Integer id);
 }
